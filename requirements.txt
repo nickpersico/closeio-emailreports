@@ -1,0 +1,5 @@
+Requests==2.2.1
+requests-transition==1.0.4.0
+simplejson==3.3.3
+premailer==2.8.1
+jinja2

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{org_name}} Sales Report</title>
+
+
+<style type="text/css">
+img {
+max-width: 100%%;
+}
+body {
+-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100%% !important; height: 100%%; line-height: 1.6;
+}
+body {
+background-color: #f6f6f6;
+}
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h2 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h3 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h4 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  .container {
+    width: 100%% !important;
+  }
+  .content {
+    padding: 10px !important;
+  }
+  .content-wrap {
+    padding: 10px !important;
+  }
+  .invoice {
+    width: 100%% !important;
+  }
+}
+</style>
+</head>
+
+<body style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100%% !important; height: 100%%; line-height: 1.6; background: #f6f6f6; margin: 0; padding: 0;">
+
+<table class="body-wrap" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; width: 100%%; background: #f6f6f6; margin: 0; padding: 0;">
+	<tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+		<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0;" valign="top"></td>
+		<td class="container" width="600" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto; padding: 0;" valign="top">
+			<div class="content" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; max-width: 600px; display: block; margin: 0 auto; padding: 20px;">
+				<table class="main" width="100%%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; border-radius: 3px; background: #fff; margin: 0; padding: 0; border: 1px solid #e9e9e9;">
+					<tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+						<td class="alert alert-warning" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 20px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 3px 3px 0 0; background: #324a74; margin: 0; padding: 20px;" align="center" valign="top">
+							<img src="data:image/png;base64,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" alt="Close.io Logo" width="35" height="35" style="padding-bottom: 5px;">
+							<br>
+							{{org_name}} Sales Report For {{report_date.strftime("%B %d, %Y")}}
+							<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 3px 3px 0 0; background: #324a74; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">
+							{{r_type}}
+							</p>
+						</td>
+					</tr>
+					<tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+						<td class="content-wrap" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 20px;" valign="top">
+							<table width="100%%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+								<tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+									<td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+										
+										<strong style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 24px; margin: 0; padding: 0;">Today's Hustle</strong>
+
+										<table width="100%%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; margin-top: 20px; margin-bottom: 20px;">
+										<tr>
+										<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">Calls Made</td>
+										
+										<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">Opportunities</td>
+										
+										<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">Deals Won</td>
+										</tr>
+										
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 28px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{today_calls}}</p>
+										</td>
+
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 28px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{today_opps}}</p>
+										</td>
+										
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 28px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{today_won}}</p>
+										</td>
+
+										</tr>
+										<tr>
+
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: lowercase;" align="center" valign="top">{{today_call_duration}} minutes
+										</td>
+										
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{today_opps_value}}
+										</td>
+
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{today_won_value}}</p>
+										</td>
+										
+										</tr>
+										</table>
+
+										<!-- #### FOR THE WEEK #### -->
+
+										<strong style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 24px; margin: 0; padding: 0;">For The Week</strong>
+
+										<table width="100%%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; margin-top: 20px; margin-bottom: 20px;">
+										<tr>
+										<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">Calls Made</td>
+										
+										<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">Opportunities</td>
+										
+										<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">Deals Won</td>
+										</tr>
+										
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 28px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{week_calls}}</p>
+										</td>
+
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 28px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{week_opps}}</p>
+										</td>
+										
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 28px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{week_won}}</p>
+										</td>
+
+										</tr>
+										<tr>
+
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: lowercase;" align="center" valign="top">{{week_call_duration}} minutes
+										</td>
+										
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{week_opps_value}}
+										</td>
+
+										<td>
+											<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #111; font-weight: 400; text-align: center; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;" align="center" valign="top">{{week_won_value}}</p>
+										</td>
+										
+										</tr>
+										</table>
+
+										<!-- #### WEEKLY LEADERBOARD #### -->
+										<strong style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 24px; margin-top: 20px;">This Week's Leaderboard</strong>
+
+										<ul>
+											<li style="padding-top: 10px; padding-bottom: 10px;"><p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;">Calls</p></li>
+												<ol> {% for calls in call_rankings %}
+													<li>{{calls[0]}} ({{calls[1]}})</li>
+													{% endfor %}
+												</ol>
+	
+											<li style="padding-top: 10px; padding-bottom: 10px;"><p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;">Opportunities</p></li>
+												<ol> {% for opps in opp_created_rankings %}
+													<li>{{opps[0]}} ({{opps[2]}})</li>
+													{% endfor %}
+												</ol>
+											
+											<li style="padding-top: 10px; padding-bottom: 10px;"><p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; color: #111; font-weight: 600; border-radius: 3px 3px 0 0; background: #FFF; margin: 0; padding: 0px; text-transform: uppercase;">Revenue Won</p></li>
+												<ol> {% for opps in revenue_rankings %}
+													<li>{{opps[0]}} (${{opps[3]}})</li>
+													{% endfor %}
+												</ol>
+										</ul>
+									
+									</td>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<div class="footer" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; width: 100%%; clear: both; color: #999; margin: 0; padding: 20px;">
+					<table width="100%%" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+						<tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
+							<td class="aligncenter content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; text-align: center; margin: 0; padding: 0 0 20px;" align="center" valign="top" color: #999>
+							<a href="https://github.com/nickpersico/closeio-emailreports" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 12px; color: #999; margin: 0; padding: 0; text-decoration: none;">Close.io Email Reports</a> • <a href="https://www.twitter.com/nickpersico" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 12px; color: #999; margin: 0; padding: 0; text-decoration: none;">Made by @NickPersico</a>
+							<br>
+							<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 10px; vertical-align: top; text-align: center; margin: 0; padding: 0 0 20px; color: #999;" align="center" valign="top">This email is not affliated with Close.io. For help, contact your Close.io admin at your company.</p>
+							</td>
+						</tr>
+					</table>
+				</div></div>
+		</td>
+		<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0;" valign="top"></td>
+	</tr>
+</table>
+
+</body>
+</html>
