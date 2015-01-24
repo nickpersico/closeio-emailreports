@@ -55,7 +55,7 @@ A python script that will send a daily sales email report to the users in your C
 1. Sign up for DigitalOcean and create a droplet: `$5/month - 512MB NY3, Ubuntu 14.04 x64`
 2. Once the droplet gets created, DigitalOcean will email you a root password that you can log into.
 3. Get on the command line and login to your droplet using the password: `ssh root@100.200.300.40`
-4. Once logged in, you should see `root@WHAT_YOU_NAMED_YOUR_DROPLET:~#`. This is good.
+4. Once logged in, you should see `root@YOUR_DROPLET_NAME:~#`. This is good.
 5. Type `cd ..` to get into the root of your droplet.
 6. Install Git so you can clone the repo: `sudo apt-get install git-core`.
 7. Install setuptools so we can get pip installed: `curl https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py | sudo python -`
@@ -63,8 +63,8 @@ A python script that will send a daily sales email report to the users in your C
 9. Clone the repo: `git clone https://github.com/nickpersico/closeio-emailreports.git`.
 10. Get into the new repo by typing `cd closeio-emailreports`.
 11. Install the necessary dependencies: `pip install -r requirements.txt`
-12. Now you should be ready to use the script, but you need to set up your `_settings.py` and `_keys.py` file.
-13. See steps 5-10 on "Running The Script Locally", but I recommend opening these scripts using nano: `sudo nano _keys.py`.
+12. Set up your `_settings.py` and `_keys.py` file.
+13. See steps 5-10 above. I recommend opening these files using nano: `sudo nano _keys.py`.
 14. nano can be tricky for beginners. The keys are `CTRL + O` to save, and `CTRL + X` to exit.
 15. Now we need to automate the script to run once a day. We'll do by typing `crontab -e`.
 16. Arrow down until you get to blank space below the comments, and now we'll add a cron job.
